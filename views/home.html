@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Home</title>
+        <link href="/css/home.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="/assets/Icon.png" type="image/png">
+    </head>
+    <body>
+        <nav class="navbar">
+            <h1 class="title">Jeu des cartes mystères</h1>
+            <button class="GameLink" onclick="gameLink()">Jeu</button>
+            <button class="ScoreLink" onclick="scoreLink()">ScoreBoard</button>
+        </nav>
+
+        <p style="text-align: center; font-size: 30px; margin-top: 80px;">
+        Bonjour à tous !<br>
+        Bienvenue sur le jeu des cartes mystères !<br>
+        Les règles sont simples :
+        </p>
+        <ul style="font-size: 30px;">
+            <li>16 cartes</li>
+            <li>1 gagnante</li>
+        </ul>
+        <p style="text-align: center; font-size: 30px; margin-top: 10px;">
+            Trouver la carte gagnante !<br>
+            À chaque mauvaise carte cliquée, vous perdez des points, <br>les points commençant à 10000 en normal, 15000 en hard.<br>
+            Le hard mode change le nombre de bonus/malus.
+        </p>
+        <p style="text-align: center; font-size: 15px; margin-top: 30px;">
+            PS :<br>
+            Votre pseudo est généré au chargement de la page de jeu, <br>tant que vous ne la quittez pas, votre pseudo sera le même.<br>
+            Si vous quittez la page de jeu puis revenez, votre pseudo aura changé.<br>
+            Seul le meilleur score pour chaque pseudo compte.
+        </p>
+        <br><br><br><br>
+        <p style="text-align: center; font-size: 25px; margin-top: 30px;">Vous n'avez pas de chance dans la vie ?<br>Faites le test des malchanceux :</p>
+        <button class="malchance" onclick="QCMLink()">Passez le test !</button>
+
+        <script src="/js/home.js"></script>
+    </body>
+</html>

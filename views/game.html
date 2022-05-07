@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Jeu</title>
+        <link href="/css/game.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="/assets/Icon.png" type="image/png">
+    </head>
+    <body onload="load()">
+        <nav class="navbar" style="margin-bottom: 150px;">
+            <h1 class="title">Jouez !</h1>
+            <button class="ScoreLink" onclick="scoreLink()">ScoreBoard</button>
+            <button class="HomeLink" onclick="homeLink()">Home</button>
+        </nav>
+
+        <p style="font-size: 15px; color: red">Toggle hard mode</p>
+        <label class="switch">
+            <input type="checkbox" id="check" onclick="check()">
+            <span class="slider round"></span>
+        </label>
+        <br><br><br>
+
+        <p id="pseudo"></p>
+        <br>
+        <p id="resultat"></p>
+        
+        <div class="gameButtons">
+            <button id="1" onclick="button(1)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="2" onclick="button(2)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="3" onclick="button(3)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="4" onclick="button(4)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="5" onclick="button(5)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="6" onclick="button(6)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="7" onclick="button(7)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="8" onclick="button(8)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="9" onclick="button(9)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="10" onclick="button(10)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="11" onclick="button(11)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="12" onclick="button(12)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="13" onclick="button(13)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="14" onclick="button(14)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="15" onclick="button(15)" class="gameButton">
+                ???
+            </button>
+    
+            <button id="16" onclick="button(16)" class="gameButton">
+                ???
+            </button>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            const socket = io();
+            var username = "<%= name %>";
+        </script>
+
+        <script src="/js/game.js"></script>
+    </body>
+</html>

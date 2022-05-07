@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>QCM</title>
+        <link href="/css/QCM.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="/assets/Icon.png" type="image/png">
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <h1 class="title">QCM</h1>
+            <button class="HomeLink" onclick="homeLink()">Home</button>
+        </nav>
+
+        <br><br><br><br>
+
+        <p style="text-align: center; font-size: 30px; margin-top: 10px;  margin-bottom: 10px;">Quel est ce bruit ?</p>
+        <audio
+        alt="Chewbacca"
+        style="border-radius: 10px;"
+        controls
+        src="/assets/Chewbacca.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+        <br>
+        <br>
+        <label class="container" id="ch1-1">Chewbacca
+            <input type="radio" name="c1" id="c1-1">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" id="ch1-2">Mère-grand
+            <input type="radio" name="c1" id="c1-2">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" id="ch1-3">Ma porte
+            <input type="radio" name="c1" id="c1-3">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" id="ch1-4">L'ordi d'Enzo
+            <input type="radio" name="c1" id="c1-4">
+            <span class="checkmark"></span>
+        </label>
+
+
+        <p style="text-align: center; font-size: 30px; margin-top: 80px;  margin-bottom: 10px;">Mélody a 18 bonbons, elle en mange 3/4 et perd le reste.<br>Quelle est la masse de la galaxie Andromède ?</p>
+        <br>
+        <br>
+        <label class="container" id="ch2-1">Elle n'existe pas. C'est un complot
+            <input type="radio" name="c2" id="c2-1">
+            <span class="checkmark ch2"></span>
+        </label>
+        <label class="container" id="ch2-2">1 230 milliards de M☉
+            <input type="radio" name="c2" id="c2-2">
+            <span class="checkmark ch2"></span>
+        </label>
+        <label class="container" id="ch2-3">Beaucoup ?
+            <input type="radio" name="c2" id="c2-3">
+            <span class="checkmark ch2"></span>
+        </label>
+        <label class="container" id="ch2-4">Mais FRAIR
+            <input type="radio" name="c2" id="c2-4">
+            <span class="checkmark ch2"></span>
+        </label>
+
+
+        <p style="text-align: center; font-size: 30px; margin-top: 80px;  margin-bottom: 10px;">Quel est le prix de la banque d'Europe ?</p>
+        <br>
+        <br>
+        <label class="container" id="ch3-1">Étoile de mer
+            <input type="radio" name="c3" id="c3-1">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" id="ch3-2">69.45 roux
+            <input type="radio" name="c3" id="c3-2">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" id="ch3-3">2 banques moins grandes
+            <input type="radio" name="c3" id="c3-3">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" id="ch3-4">Rez-de-chaussée
+            <input type="radio" name="c3" id="c3-4">
+            <span class="checkmark"></span>
+        </label>
+
+
+        <p style="text-align: center; font-size: 30px; margin-top: 80px;  margin-bottom: 10px;">À quoi réfléchit cet homme ?</p>
+        <img style="height: 30vh; width: auto;" src="/assets/reflechi.png" id="reflechi" alt="Homme qui réfléchit avec des lunettes qui brillent">
+        <br>
+        <br>
+        <label class="container" id="ch4-1" onclick="test()">Pain au chocolat ou chocolatine ?
+            <input type="radio" name="c4" id="c4-1">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" id="ch4-2">J'ai les gants de Mickey ???
+            <input type="radio" name="c4" id="c4-2">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" id="ch4-3">POURQUOI MES LUNETTES BRILLENT ?!!!
+            <input type="radio" name="c4" id="c4-3">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" id="ch4-4">Il fait vachement sombre ici
+            <input type="radio" name="c4" id="c4-4">
+            <span class="checkmark"></span>
+        </label>
+
+
+        <p style="text-align: center; font-size: 30px; margin-top: 80px;  margin-bottom: 10px;">Quel est le plus lourd ?</p>
+        <br>
+        <br>
+        <label class="container" id="ch5-1">Un lit triple étage
+            <input type="radio" name="c5" id="c5-1">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" id="ch5-2">L'humour de mes potes
+            <input type="radio" name="c5" id="c5-2">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" id="ch5-3">Une pomme
+            <input type="radio" name="c5" id="c5-3">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container" id="ch5-4">La tour Eiffel
+            <input type="radio" name="c5" id="c5-4">
+            <span class="checkmark"></span>
+        </label>
+        
+        <br><br><br><br>
+        <p style="text-align: center; font-size: 25px; margin-top: 30px;">Fini ?</p>
+        <button class="submit" onclick="Submit()">Envoyer</button>
+        <p style="text-align: center; font-size: 25px; margin-top: 100px; margin-bottom: 30px;" id="resultats">Waiting...</p>
+        
+        
+
+        <script src="/js/QCM.js"></script>
+    </body>
+</html>

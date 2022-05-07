@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    /*font-family: 'Digital-7 Mono', arial;*/
+}
+
+body {
+    background: linear-gradient(#99B9FB, #6BDAFF);
+}
+
+#resultat {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* ----------- Barre de navigation ------------ */
+.navbar {
+    color: white;
+    text-align: center;
+    height: 15vh;
+    width: 100vw;
+    box-shadow: 0 3px 15px #555555;
+}
+
+.title {
+    padding-top: 4vh;
+    font-size: 35px;
+    color: #5f5f5f;
+}
+
+
+
+/* ----------- Slider ------------ */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Cacher la checkbox originale */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Le slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Faire un slider rond */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* ----------- Bouttons jeu ------------ */
+div > button {
+    border-radius: 25px;
+    background: transparent;
+    border: 1px #3f45fd solid;
+    width: 18%;
+    padding: 2%;
+    margin: 3% 3% 3%;
+    color: #5f5f5f;
+    overflow: hidden;
+    transition: all 0.3s;
+    outline: none;
+}
+
+
+div > button:hover {
+    background-color: #5b81a4;
+    color: #d3d3d3;
+    border: none;
+}
+
+
+.duper {
+    border: 1px #ff0000 solid;
+}
+
+.win {
+    border: 1px #00ff2a solid;
+}
+
+.bonus {
+    border: 1px #d4af37 solid;
+}
+
+.malus {
+    border: 1px #7C00B9 solid;
+}
+
+
+
+/* ----------- Boutons navbar ------------ */
+.ScoreLink, .HomeLink {
+    font-size: 18px;
+}
+
+
+
+.ScoreLink {
+    position: absolute;
+    left: 5%;
+    top: 3.52%;
+    border-radius: 15px;
+    background: transparent;
+    border: 1px #5f5f5f solid;
+    width: 15%; 
+    height: 8%;
+    color: #5f5f5f;
+    overflow: hidden;
+    transition: all 0.3s;
+    outline: none;
+}
+
+.ScoreLink::before {
+    content: "";
+    position: absolute;
+    background-color: #5f5f5f;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: -1;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.ScoreLink:hover::before {
+  width: 100%;
+}
+
+.ScoreLink:hover {
+  color: #d3d3d3;
+  border: none;
+}
+
+
+
+.HomeLink {
+    position: absolute;
+    right: 5%;
+    top: 3.52%;
+    border-radius: 15px;
+    background: transparent;
+    border: 1px #5f5f5f solid;
+    width: 15%; 
+    height: 8%;
+    color: #5f5f5f;
+    overflow: hidden;
+    transition: all 0.3s;
+    outline: none;
+}
+
+.HomeLink::before {
+    content: "";
+    position: absolute;
+    background-color: #5f5f5f;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 0;
+    z-index: -1;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.HomeLink:hover::before {
+    width: 100%;
+}
+
+.HomeLink:hover {
+    color: #D3D3D3;
+    border: none;
+}
+
+
+
+
+/* ----------- Responsive ------------ */
+@media screen and (max-width: 1500px) {
+    .navbar {
+        height: 17vh;
+    }
+    
+    .title {
+        padding-top: 4vh;
+    }
+    
+    .ScoreLink {
+        left: 5%;
+        /* top: 3.52%; */
+        top: 3.52%;
+        width: 25%;
+        height: 8%;
+    }
+
+    .HomeLink {
+        right: 5%;
+        /* top: 3.52%; */
+        top: 3.52%;
+        width: 25%; 
+        height: 8%;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    .navbar {
+        height: 24vh;
+    }
+    
+    .title {
+        padding-top: 4vh;
+    }
+    
+    .ScoreLink {
+        left: 14%;
+        /* top: 3.52%; */
+        top: 12vh;
+        width: 25%; 
+        height: 8%;
+    }
+
+    .HomeLink {
+        left: 60%;
+        /* top: 3.52%; */
+        top: 12vh;
+        width: 25%; 
+        height: 8%;
+    }
+
+    div > button {
+        text-align: center;
+        width: 18%; 
+        padding: 5%;
+        margin: 3% 8% 3%;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .ScoreLink {
+        width: 30%;
+    }
+
+    .HomeLink {
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .navbar {
+        height: 30vh;
+    }
+    
+    .title {
+        padding-top: 4vh;
+    }
+    
+    .ScoreLink {
+        left: 14%;
+        /* top: 3.52%; */
+        top: 18vh;
+        width: 30%;
+        height: 8%;
+    }
+
+    .HomeLink {
+        left: 60%;
+        /* top: 3.52%; */
+        top: 18vh;
+        width: 30%;
+        height: 8%;
+    }
+}
+
+
+@media screen and (max-width: 950px) and (max-height: 480px) {
+    .navbar {
+        height: 28vh;
+    }
+    
+    .title {
+        padding-top: 4vh;
+    }
+    
+    .ScoreLink {
+        left: 14%;
+        /* top: 3.52%; */
+        top: 16vh;
+        width: 25%; 
+        height: 8%;
+    }
+
+    .HomeLink {
+        left: 60%;
+        /* top: 3.52%; */
+        top: 16vh;
+        width: 25%; 
+        height: 8%;
+    }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Scores</title>
+        <link href="/css/scoreboard.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="/assets/Icon.png" type="image/png">
+    </head>
+    <body onload="load()">
+
+        <nav class="navbar">
+            <h1 class="title">Classement</h1>
+            <button class="GameLink" onclick="gameLink()">Jeu</button>
+            <button class="HomeLink" onclick="homeLink()">Home</button>
+        </nav>
+
+        <div style="padding-top: 3vh">
+            <ol id="scoreBoard">
+            </ol>
+        </div>
+
+        <script src="/js/scoreboard.js"></script>
+    </body>
+</html>
