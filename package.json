@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter list"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -13,8 +13,8 @@
     "ejs": "^3.1.7",
     "express": "^4.18.0",
     "fs": "^0.0.1-security",
-    "socket.io": "^4.5.0",
-    "mocha": "^10.0.0"
+    "mocha": "^10.0.0",
+    "socket.io": "^4.5.0"
   },
   "devDependencies": {
     "@faker-js/faker": "^6.2.0"
